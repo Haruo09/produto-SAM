@@ -1,37 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana de Arte Moderna</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <div id="sidebar">
+        <h2>Tópicos:</h2>
+        <ul>
+            <li>
+                <a href="#a-contextualizacao" class="nav-link">
+                    Contextualização
+                </a>
+            </li>
+            <li>
+                <a href="#a-contexto-nacional" class="nav-link">
+                    Contexto Nacional
+                </a>
+            </li>
+            <li>
+                <a href="#a-contexto-internacional" class="nav-link">
+                    Contexto Internacional
+                </a>
+            </li>
+            <li>
+                <a href="#a-artistas" class="nav-link">
+                    Artistas e Obras
+                </a>
+            </li>
+            <li>
+                <a href="#a-conflitos" class="nav-link">
+                    Conflitos e Anedotas
+                </a>
+            </li>
+            <li>
+                <a href="#importancia" class="nav-link">
+                    Importância e Legado
+                </a>
+            </li>
+        </ul>
+    </div>
     <header>
-        <h1>SEMANA DE ARTE MODERNA</h1>
+            <button id="toggle_sidebar">
+                <img src="./images/menu.png" alt="menu button">
+            </button>
+            <h1>INFO.</h1>
         <nav>
-            <a href="#">Contextualização</a>
-            <a href="#">Contexto Histórico Nacional</a>
-            <a href="#">Contexto Histórico Internacional</a>
-            <a href="#">Artistas e Obras</a>
-            <a href="#">Conflitos e Anedotas</a>
-            <a href="#">Importância e Legado</a>
+            <a href="./index.html">Home</a>
+            <a href="./pages/quemsomos.html">Quem Somos</a>
         </nav>
     </header>
     <main>
-        <section class="black">
-            <h2>Contextualização</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate recusandae, eum quasi excepturi autem asperiores itaque ipsam adipisci quo, alias in iusto totam quidem unde sequi eius possimus quibusdam voluptas repellat ratione. Optio quaerat beatae minima, officiis accusantium iusto dolor qui quos assumenda quae eum aperiam iure reiciendis tempore est rem id! Asperiores aspernatur consectetur quasi perferendis culpa ab porro laboriosam iusto cumque facere nemo modi suscipit, voluptatem repellendus temporibus esse vitae, distinctio ipsam quibusdam. Nostrum earum quo facilis id, totam sequi quasi adipisci expedita consequuntur esse sint vel magnam nisi amet nemo, unde cupiditate blanditiis repellat! Ipsum, sint?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate recusandae, eum quasi excepturi autem asperiores itaque ipsam adipisci quo, alias in iusto totam quidem unde sequi eius possimus quibusdam voluptas repellat ratione. Optio quaerat beatae minima, officiis accusantium iusto dolor qui quos assumenda quae eum aperiam iure reiciendis tempore est rem id! Asperiores aspernatur consectetur quasi perferendis culpa ab porro laboriosam iusto cumque facere nemo modi suscipit, voluptatem repellendus temporibus esse vitae, distinctio ipsam quibusdam. Nostrum earum quo facilis id, totam sequi quasi adipisci expedita consequuntur esse sint vel magnam nisi amet nemo, unde cupiditate blanditiis repellat! Ipsum, sint?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate recusandae, eum quasi excepturi autem asperiores itaque ipsam adipisci quo, alias in iusto totam quidem unde sequi eius possimus quibusdam voluptas repellat ratione. Optio quaerat beatae minima, officiis accusantium iusto dolor qui quos assumenda quae eum aperiam iure reiciendis tempore est rem id! Asperiores aspernatur consectetur quasi perferendis culpa ab porro laboriosam iusto cumque facere nemo modi suscipit, voluptatem repellendus temporibus esse vitae, distinctio ipsam quibusdam. Nostrum earum quo facilis id, totam sequi quasi adipisci expedita consequuntur esse sint vel magnam nisi amet nemo, unde cupiditate blanditiis repellat! Ipsum, sint?
-            </p>
+        <a href="#Home" id="btnGoToTheTop">
+            <img src="./images/up-arrow.svg" alt="">
+        </a>
+        <section id="Home">
+            <div id="quadro">
+                <h1>
+                    SEMANA <br>
+                    DE ARTE <br>
+                    MODERNA
+                </h1>
+                <img src="images/downarrow.svg" alt="">
+            </div>
         </section>
+        <a href="#" id="a-contextualizacao"><br></a>
+        <article>
+            <section id="contextualizacao">
+
+                <h2 id="um">Contextualização</h2>
+                
+                <img src="images/ilustrativas/Semana-de-22-.jpeg" alt="" class="float right">
+
+                <p>
+                    No início da década de 1920, o Brasil experimentava um período de intensas mudanças sociais, políticas e econômicas, gerando um clima de agitação e transformação. Nesse contexto de efervescência, emergiu uma necessidade premente de romper com os padrões conservadores que há muito tempo dominavam o cenário artístico nacional. Foi nesse contexto que ocorreu a Semana de Arte Moderna de 1922, um evento que não só provocou profundas perturbações na estrutura da sociedade brasileira, mas também deixou uma marca duradoura na história das artes do país.
+                </p>
+                <p>
+                    Antes da Semana de Arte Moderna, as artes brasileiras estavam mergulhadas em uma atmosfera de conservadorismo e imitação das correntes estéticas europeias. A academia dominava o cenário, impondo padrões estéticos que pouco refletia a riqueza e a diversidade cultural do Brasil. A pintura acadêmica reproduzia paisagens bucólicas e temas históricos, enquanto a literatura buscava inspiração nas tradições europeias, ignorando as raízes nacionais.
+                </p>
+                <p>
+                    Foi nesse contexto que surgiram os precursores do movimento modernista no Brasil. Figuras como Mário de Andrade, Oswald de Andrade, Anita Malfatti, Tarsila do Amaral e Di Cavalcanti, entre outros.
+                </p>
+                <p>
+                    A Semana de Arte Moderna, realizada entre os dias 13 e 17 de fevereiro de 1922, no Teatro Municipal de São Paulo, foi o ápice desse movimento de renovação. Sob a liderança de um grupo de jovens artistas e intelectuais visionários, o evento reuniu uma série de manifestações artísticas que desafiaram as convenções estabelecidas. Pinturas ousadas, poesias vanguardistas, peças teatrais inovadoras e performances musicais revolucionárias ecoaram pelos corredores do Teatro Municipal, provocando reações intensas e polarizadas na plateia e na crítica.
+                </p>
+                
+                
+            </section>
+            
+            <a href="#" id="a-contexto-nacional"><br></a>
+            <section id="contexto-nacional">
+                <h2 id="dois">Contexto Histórico Nacional</h2>
+                
+                <aside class="poema">
+                    <h3>Vaso Chinês</h3>
+
+                    
+                        Estranho mimo aquele vaso! Vi-o, <br>
+                        Casualmente, uma vez, de um perfumado <br>
+                        Contador sobre o mármore luzidio, <br>
+                        Entre um leque e o começo de um bordado. <br>
+                        Fino artista chinês, enamorado, <br>
+                        Nele pusera o coração doentio <br>
+                        Em rubras flores de um sutil lavrado, <br>
+                        Na tinta ardente, de um calor sombrio. <br>
+                        Mas, talvez por contraste à desventura, <br>
+                        Quem o sabe?... de um velho mandarim <br>
+                        Também lá estava a singular figura. <br>
+                        Que arte em pintá-la! A gente acaso vendo-a, <br>
+                        Sentia um não sei quê com aquele chim <br>
+                        De olhos cortados à feição de amêndoa. <br>
+
+                    <figcaption>Vaso Chinês, por Alberto Oliveira, autor parnasiano.</figcaption>
+                </aside>
+                <p>
+                    A Semana de 22 ocorreu diante de um cenário repleto de tensões políticas, sociais e econômicas, durante o período da República Velha, na qual era controlada pelas oligarquias cafeeiras e pela política que ficou conhecida como Café com Leite.
+                </p>
+                <p>
+                    Além disso, nessa época, era comum que pessoas com maior poder aquisitivo fossem estudar na Europa, e isso aconteceu com nomes brasileiros conhecidos como Oswald de Andrade e Anita Malfatti. Ambos trouxeram ao Brasil uma nova concepção de arte, influenciando assim, para a criação do evento da Semana de Arte Moderna.
+                </p>
+                <p>
+                    Até o início do século XX, a escola artística tida como oficial no Brasil era o Parnasianismo. Caracterizado pelo rigor formal (preocupação com a forma do poema no que se refere à metrificação), pela proposta da “arte pela arte” e pelo academicismo e elevada erudição, o Parnasianismo havia sido a tendência estética dominante até então, especialmente na poesia, figurando em textos oficiais, como o Hino Nacional Brasileiro.
+                </p>
+                <p>
+                    O Brasil, por sua vez, também começava a se modernizar. As primeiras indústrias começavam a se instalar na cidade de São Paulo, e a produção de café do interior paulista gerava grandiosa receita de exportação, transformando o estado em novo centro econômico brasileiro. Por esse motivo, a capital paulista foi o palco dos eventos da Semana de Arte Moderna, que contou com o patrocínio de diversos membros da burguesia industrial que ali se consolidava.
+                </p>
+                <p>
+                    Além disso, 1922 foi o centenário da Independência do Brasil. Assim, o cenário era ideal para a renovação artística nacional, e esse foi um dos motes da Semana: a atualização intelectual da consciência nacional. O Brasil, que se transformava e se modernizava, precisava de um novo olhar artístico, sociocultural e filosófico que propusesse uma arte nacional original e atualizada, trazendo consigo um pensamento a respeito dos problemas brasileiros e da variedade cultural que se estendia por nosso vasto território.
+                </p>
+            
+            </section>
+            <a href="#" id="a-contexto-internacional"><br></a>
+            <section id="contexto-internacional">
+            
+                <h2 id="tres">Contexto Histórico Internacional</h2>
+                <aside class="img-container">
+                    <img src="images/ogrito-cke.webp" alt="">
+                    <figcaption>"O Grito", de Edvard Munch, clássica
+                    obra modernista.</figcaption>
+                </aside>
+                <p>
+                    Marcado por profundas transformações, o Modernismo foi um movimento artístico e cultural que surgiu na Europa no início do século XX. Seu principal objetivo era romper com o “tradicionalismo”, experimentando novas técnicas de criação artística e trazendo valores, estéticas e modelos artísticos para o que viam como uma nova realidade, além de questionar os moldes formais ou acadêmicos de arte. Dessa forma, o modernismo distancia-se do rural, do bucólico e da idealização do passado. Tem como principal característica o rompimento com os padrões vigentes. Tal aspecto se dá principalmente por conta de seu momento histórico.
+                </p>
+                <p>
+                    Aconteceu em um período de grandes conquistas tecnológicas (como o invento da fotografia e do cinema), além da Revolução Industrial, a Primeira Guerra Mundial e posteriormente a Segunda Guerra Mundial.
+                </p>
+                <p>
+                    Após a 1ª Guerra Mundial, o Modernismo ganha projeção: Os horrores da guerra, que causou cerca de vinte milhões de mortes, motivaram movimentos modernistas a pensarem o uso da tecnologia e poder de transformação da natureza e do ambiente não para destruir e matar, mas em uma perspectiva centrada no ser humano e na criação.
+                </p>
+                <p>
+                    Assim, a arte também se transforma e passa a exercer cada vez mais um papel contestador, expressando de alguma forma as incertezas e dilemas da contemporaneidade.
+                </p>
+                <p>
+                    Essa expressão artística transformou radicalmente o campo das artes ao quebrar com os formalismos, atingindo inclusive as estruturas gramaticais no campo literário
+                </p>
+                <h3>Movimentos que influenciaram o modernismo internacional:</h3>
+                <ol>
+                    <li>
+                        Expressionismo
+                    </li>
+                    <li>
+                        Fauvismo
+                    </li>
+                    <li>
+                        Cubismo
+                    </li>
+                    <li>
+                        Abstracionismo
+                    </li>
+                    <li>
+                        Futurismo
+                    </li>
+                </ol>
+                <p>
+                    Estes movimentos de vanguarda contribuíram com o desenvolvimento do modernismo, devido a compartilharem uma ruptura com as tradições artísticas convencionais, buscando novas formas de expressão e representação que refletissem os desafios e as mudanças da sociedade moderna. Cada movimento abordou esses temas de maneiras diferentes, mas todos foram influentes na redefinição da arte e na quebra de barreiras estilísticas e conceituais. O modernismo, como um movimento cultural mais amplo, abraçou essas experimentações e rupturas, buscando refletir a complexidade e a diversidade do mundo moderno.
+                </p>
+                <p>
+                    Em 1917, a pintora Anita Malfatti, brasileira que estudou na Europa, realizou sua segunda exposição e foi duramente criticada por artistas conservadores (principalmente Monteiro Lobato), sendo considerada pioneira do Modernismo brasileiro. Esse acontecimento motivou a união dos modernistas brasileiros e os incentivou a difundir seu movimento artístico.
+                </p>
+                <p>
+                    Para alguns modernistas, principalmente Mário de Andrade e Oswald de Andrade, o centenário da independência do Brasil, em 2022, era o cenário perfeito para a difusão do Modernismo e para uma reflexão do futuro da arte brasileira e da identidade nacional.
+                </p>
+            </section>
+            <a href="#" id="a-artistas"><br></a>
+            <section id="artistas">
+            
+                <h2 id="quatro">Artistas e Obras</h2>
+                <h3>Artistas</h3>
+                <p>
+                    Os principais artistas foram:
+                </p>
+                <div id="artists-galery">
+                    <div class="quadro-artista">
+                        <img src="images/db/Mario de Andrade.jpg">
+                        <div class="informacoes">
+                            <h3>Mário de Andrade</h3>
+                            <p>
+                                Mário Raul de Morais Andrade foi um poeta, romancista, crítico de arte, musicólogo, professor universitário e ensaísta, considerado unanimidade nacional e reconhecido por críticos como o mais importante intelectual brasileiro do século XX. Notável polímata, Mário de Andrade liderou o movimento modernista Maylsonanico no Brasil e produziu um grande impacto na renovação literária e artística do país, participando ativamente da Semana de Arte Moderna de 22. 
+                            </p>
+                            <p>
+                                Considerado o escritor mais nacionalista e múltiplo dos brasileiros, Mário construiu um caráter revolucionário na literatura brasileira, que se iniciou com Pauliceia Desvairada (Livro/Coletânea de poemas), onde analisa a cidade de São Paulo e todos seus elementos (provincianismo, aristocracia, burguesia, rio Tietê, Avenida Paulista). Mário também é considerado um dos primeiros musicólogos do país, e seu maior interesse era a música, particularmente os ritmos nordestinos, nos quais tentou pesquisar e valorizar, assim como fez com a Missão de Pesquisas Folclóricas, tentando criar um estudo e uma descoberta das raízes culturas do Brasil. Isso também ocorreu com seu romance mais famoso, Macunaíma, considerada uma das obras capitais da narrativa brasileira no século XX.
+                            </p>
+                            <p>
+                                Sérgio Milliet (São Paulo, 20 de setembro de 1898 – São Paulo, 9 de novembro de 1966), foi diretor da Biblioteca Mário de Andrade e participou da Semana da Arte Moderna quando retornou ao Brasil, mesmo não dominando corretamente a língua pátria (apresentou um poema em francês, lida por um amigo genebrino)
+                            </p>
+                            <p>
+                                Ao mesmo tempo que Andrade efetuava seu trabalho como pesquisador do folclore brasileiro, fez amizade com um grupo de jovens artistas e escritores de São Paulo que, como ele, estavam interessados no modernismo europeu. Alguns deles mais tarde integrariam o chamado Grupo dos Cinco: ele próprio, Andrade, o poeta Oswald de Andrade (sem relação de parentesco com Mário de Andrade, apesar da coincidência de nomes) e Menotti del Picchia, além das pintoras Tarsila do Amaral e Anita Malfatti.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Oswald de Andrade.jpg" height="400">
+                        <div class="informacoes">
+                            <h3>Oswald de Andrade</h3>
+                            <p>
+                                José Oswald de Sousa de Andrade, apelidado de Oswald de Andrade, foi um poeta, escritor, advogado; ensaísta e dramaturgo brasileiro. Foi um dos promotores da Semana de Arte Moderna, tornando-se um dos grandes nomes do modernismo literário brasileiro. Ficou conhecido pelo seu temperamento "irreverente e combativo", sendo o mais inovador entre estes. Colaborou na revista Contemporânea (1915-1926). De 1926 a 1929 foi casado com Tarsila do Amaral e de 1930 a 1935 foi marido de Pagu.
+                            </p>
+                            <p>
+                                Em dezembro de 1917, a pintora Anita Malfatti retornou ao Brasil, após estudos nos Estados Unidos, e colocou em exposição algumas de suas pinturas em estilo expressionista e cubista, como A estudante e O homem amarelo, em um salão da Rua Líbero Badaró. Uma semana depois, o escritor Monteiro Lobato escreve um artigo intitulado A Propósito da Exposição Malfatti, que depois ficou mais conhecido como Paranoia ou Mistificação?,no qual defende a arte acadêmica e usa a exposição de Anita como exemplo do que deve ser evitado. O prestígio que gozava o escritor foi o suficiente para levar os compradores dos quadros de Anita a devolverem as obras e exigirem o dinheiro de volta. Oswald sai em defesa das obras de Anita, escrevendo um artigo para o Jornal do Commercio em janeiro de 1918 elogiando a coragem da pintora por expor seus trabalhos em um ambiente fechado à inovação artística. Mário de Andrade também se impressiona com a qualidade artística da pintora e compra O homem amarelo.
+                            </p>
+                            <p>
+                                Novas pessoas se juntaram ao incipiente grupo na época do ocorrido, como Cândido Mota Filho, Di Cavalcanti, Agenor Barbosa, Menotti del Picchia e Guilherme de Almeida. Em 1919, Oswald e Menotti conhecem o escultor Victor Brecheret no Palácio das Indústrias. Aos poucos, as ações do grupo começam a ser visto pelo meio intelectual como incômodas, e seus participantes passam a ser chamados de futuristas, termo que era empregado pejorativamente a quem procurava fazer arte diferente do modo tradicional.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Menotti Del Picchia.jpg" height="400" >
+                        <div class="informacoes">
+                            <h3>Menotti Del Picchia</h3>
+                            <p>
+                                Paulo Menotti Del Picchia foi um poeta, jornalista, tabelião, advogado, político, romancista, cronista, pintor e ensaísta brasileiro. Foi membro do Partido Republicano Paulista (PRP) durante a Primeira República, participou da Revolução de 1932 como ajudante de ordens do governador Pedro de Toledo. Em 1924 criou, com Cassiano Ricardo e Plínio Salgado, o Movimento Verdamarelo, de tendência nacionalista. Menotti Del Picchia foi um dos principais articuladores, ativistas e colaboradores da Semana de Arte Moderna.
+                            </p>
+                            <p>
+                                O autor abriu a segunda noite, a mais importante e a mais tumultuada da Semana, com uma conferência em que era negada a filiação do grupo modernista ao futurismo de Marinetti, mas defendia a integração da poesia com os tempos modernos, a liberdade de criação e, ao mesmo tempo, a criação de uma arte genuinamente brasileira.
+                            </p>
+                            <p>
+                                Fez parte do Grupo dos Cinco, foi diretor de A Noite e A Cigarra, entre 1920 e 1940, além de diversos outros jornais e revistas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Anita Malfatti.jpg"  height="400" >
+                        <div class="informacoes">
+                            <h3>Anita Malfatti</h3>
+                            <p>
+                                Anita Catarina Malfatti foi uma pintora, desenhista, gravadora, ilustradora e professora ítalo-brasileira. Anita Malfatti era portadora de deficiência motora. É considerada pioneira da Arte Moderna no Brasil.
+                            </p>
+                            <p>
+                                A pintora viajou e teve contato com a arte na Alemanha, Estados Unidos e posteriormente realizava suas próprias exposições. Na sua volta ao Brasil, veio a crítica do escritor e crítico Monteiro Lobato, que considerou as obras das artistas distorções de mau gosto, porém, reconheceu o talento da pintora.  As críticas severas e reações conservadoras, todavia, provocaram reação de jovens literatos e artistas visuais, como Oswald de Andrade, Menotti del Picchia e Emiliano Di Cavalcanti em defesa de Malfatti. Este momento é emblemático por ter possibilitado o reconhecimento e aproximação daqueles que viriam a se chamar modernistas. Anita inicia estudos com o pintor acadêmico Pedro Alexandrino Borges no ano de 1919. Frequentando o ateliê do pintor alemão George Fischer Elpons, em São Paulo, conheceu Tarsila do Amaral.
+                            </p>
+                            <p>
+                                Neste período, a aproximação de Malfatti a Tarsila do Amaral, bem como a Del Picchia, Mário e Oswald de Andrade, fez com que passassem pouco a pouco a atuar como grupo, conhecido como o Grupo dos Cinco. Em decorrência disso, foi organizada a Semana de Arte Moderna de 1922.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Tarsila do Amaral.jpg" height="400" >
+                        <div class="informacoes">
+                            <h3>Tarsila do Amaral</h3>
+                            <p>
+                                Tarsila de Aguiar do Amaral foi uma pintora, desenhista, escultora, ilustradora, cronista e tradutora brasileira. É considerada uma das principais artistas modernistas latino-americanas, além de ser considerada a pintora que melhor alcançou as aspirações brasileiras de expressão nacionalista nesse estilo artístico.
+                            </p>
+                            <p>
+                                Como integrante do Grupo dos Cinco, Tarsila também é considerada uma grande influência no movimento da arte moderna no Brasil. 
+                            </p>
+                            <p>
+                                Em relação a Semana da Arte Moderna, Tarsila do Amaral não participou do evento. Contudo, de acordo com Tarsilinha do Amaral, sobrinha-neta da artista, Tarsila sabia das articulações para a realização da Semana. “Apesar de ela não ter participado da Semana, ela ficou sabendo através das cartas da Anita [Malfatti], pois elas eram amigas. A minha tia estava em Paris estudando”, diz. 
+                            </p>
+                            <p>
+                                Foi fundamental na formação do movimento estético, Antropofagia (1928-1929); na verdade, foi Tarsila quem com seu célebre quadro, Abaporu, inspirou o famoso Manifesto Antropófago de Oswald de Andrade.
+                            </p>
+                            <p>
+                                Tarsila foi convidada a se juntar ao movimento e juntos formaram o Grupo dos Cinco, que buscava promover a cultura brasileira, o uso de estilos não especificamente europeus e a inclusão de coisas indígenas do Brasil.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Heitor Villa Lobos.jpg" height="400" >
+                        <div class="informacoes">
+                            <h3>Heitor Villa-Lobos</h3>
+                            <p>
+                                Heitor Villa-Lobos foi um compositor, maestro, violoncelista, pianista e violonista brasileiro, descrito como "a figura criativa mais significativa do Século XX na música clássica brasileira", e se tornando o compositor sul-americano mais conhecido de todos os tempos.
+                            </p>
+                            <p>
+                                Destaca-se por ter sido o principal responsável pela descoberta de uma linguagem peculiarmente brasileira em música, sendo considerado o maior expoente da música do modernismo no Brasil, compondo obras que contêm nuances das culturas regionais brasileiras, com os elementos das canções populares e indígenas. 
+                            </p>
+                            <p>
+                                Villa-Lobos participou da Semana de Arte Moderna de 1922, apresentando-se em três dias, com três diferentes espetáculos. Teve importantes intérpretes nos espetáculos da Semana, como Ernani Braga (Rio de Janeiro, 10 de janeiro de 1888 – São Paulo, 17 de setembro de 1948) e Lucília Villa-Lobos (Paraíba do Sul, 26 de maio de 1886 — Rio de Janeiro, 25 de maio de 1966), sua esposa desde 1913.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Graça Aranha.jpg" height="400" >
+                        <div class="informacoes">
+                            <h3>Graça Aranha</h3>
+                            <p>
+                                José Pereira da Graça Aranha  foi um escritor e diplomata brasileiro, e um imortal da Academia Brasileira de Letras, considerado um autor pré-modernista no Brasil, sendo um dos organizadores da Semana de Arte Moderna de 1922. A publicação do romance Canaã foi um dos grandes marcos para o nacionalismo e o pré-modernismo em especial, nos anos 1902 e 1922.
+                            </p>
+                            <p>
+                                Devido aos cargos que ocupou na diplomacia brasileira em países europeus, ele esteve a par dos movimentos vanguardistas que surgiam na Europa, tendo tentado introduzi-los, à sua maneira, na literatura brasileira, rompendo com a Academia Brasileira de Letras por isso em 1924. Um aspecto importante de mencionar é que Graça Aranha é visto como o único fundador e escritor que teve uma relação com a academia brasileira de letras, sem ao menos ter publicado uma obra. "Se a Academia se desvia desse movimento regenerador, se a Academia não se renova, morra a Academia!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadro-artista">
+                        <img src="images/db/Di Cavalcanti.jpg" height="400" >
+                        <div class="informacoes">
+                            <h3>Di Cavalcanti</h3>
+                            <p>
+                                Emiliano Augusto Cavalcanti de Albuquerque Melo, mais conhecido como Di Cavalcanti, foi um pintor modernista, desenhista, ilustrador, muralista e caricaturista brasileiro. Sua arte contribuiu significativamente para distinguir a arte brasileira de outros movimentos artísticos de sua época, através de suas reconhecidas cores vibrantes, formas sinuosas e temas tipicamente brasileiros como carnaval, mulatas e tropicalismos em geral. Di Cavalcanti é, juntamente com outros grandes nomes da pintura como Anita Malfatti e Tarsila do Amaral, um dos mais ilustres representantes do modernismo brasileiro. Entre 11 e 18 de fevereiro de 1922, idealizou e organizou a Semana de Arte Moderna, criando, para essa ocasião, as peças promocionais do evento: catálogo e programa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            <a href="#" id="a-conflitos"><br></a>
+            <section id="conflitos">
+                <h2 id="cinco">Conflitos e Anedotas</h2>
+                <p>
+                    A Semana de Arte Moderna de 1922 foi um evento histórico que marcou a ruptura com o academicismo e o europeísmo na arte brasileira. Longe de ser um evento pacífico, a semana foi palco de acalorados debates, críticas ácidas e até mesmo episódios de violência física, evidenciando os conflitos e as dificdivdades enfrentadas pelos artistas modernistas.
+                </p>
+                <p>
+                    A sociedade brasileira da época era profundamente conservadora, com a elite intelectual presa aos padrões estéticos europeus. As propostas vanguardistas da  Semana de Arte Moderna geraram forte resistência
+                </p>
+                <h3>Exemplos Marcantes de Conflitos</h3>
+                <h4>Críticas Ácidas e Indignação</h4>
+                <p>
+                    Um crítico tradicionalista, ao observar a obra "Abaporu" de Tarsila do Amaral, exclamou com desdém: "Isso não é arte! É uma afronta à civilização!". A obra, com suas formas abstratas e cores vibrantes, chocou a plateia acostumada à arte figurativa e realista, gerando indignação e incompreensão.
+                </p>
+                <h4>Reações violentas e tumulto</h4>
+                <p>
+                    Durante a apresentação de "Carnaval das Serpentes" de Heitor Villa-Lobos, a plateia se revoltou contra a dissonância da música, lançando objetos no palco e provocando um tumulto. A obra, com  seus ritmos sincopados e sons inesperados, desafiou as expectativas do público acostumado à música clássica europeia, causando grande agitação.
+                </p>
+                <h4>Manifesto de inconformismo e rebeldia</h4>
+                <p>
+                    Em resposta às críticas e à incompreensão, Mário de Andrade proferiu a célebre frase: "Ora, meu caro amigo, o senhor sabe perfeitamente que a gente não pode continuar fazendo  uma arte europeia no Brasil!". Essa frase resume a essência da ruptura proposta pelo evento: a busca por uma identidade cultural brasileira autêntica, livre dos padrões europeus.
+                </p>
+                <h3> Organizar a Semana de Arte Moderna em 1922 foi uma tarefa desafiadora e complexa. A comissão organizadora, liderada por Mário de Andrade, enfrentou  diversos obstáculos </h3>
+                <h3> Desafios Logísticos</h3>
+            
+                <h4>Encontrar um local adequado</h4>
+                <p>
+                    O Teatro Municipal de São Paulo, com sua acústica impecável e cadeiras de veludo, era um ambiente pouco usual para performances de vanguarda. A comissão precisou convencer a administração do teatro a ceder o espaço para o evento, argumentando sobre a importância  cultural da Semana.
+                </p>
+                <h4>Assegurar a segurança das obras de arte</h4>
+                <p>
+                    Transportar e instalar as obras              de arte, muitas delas inovadoras e frágeis, exigia cuidados especiais. A comissão desenvolveu um plano meticuloso de transporte e instalação, utilizando embalagens adequadas e mão de obra especializada.
+                </p>
+                <h4>Gerenciar a logística das apresentações</h4>
+                <p>
+                    As apresentações musicais e teatrais envolviam diversos instrumentos, figurinos e cenários, exigindo um planejamento meticuloso e uma equipe dedicada. A comissão elaborou um cronograma detalhado das apresentações, coordenando as equipes de som, iluminação e cenografia.
+                </p>
+                <h3> Desafios Financeiros</h3>
+                <h4> Obter Recursos</h4>
+                <p> 
+                    A captação de recursos para custear o evento foi um desafio, pois o modernismo era um movimento vanguardista e não contava com o apoio de grandes patrocinadores. A comissão organizou eventos beneficentes, buscou doações de simpatizantes e realizou campanhas de divulgação para arrecadar fundos. 
+                </p>
+                <h4> Convencer patrocinadores</h4>
+                <p> 
+                    Persuadir patrocinadores a investirem em um evento que desafiava os padrões estéticos tradicionais e as expectativas do público exigia argumentos convincentes. A comissão apresentou o potencial cultural e artístico da Semana, destacando sua importância para a construção de uma identidade brasileira autêntica.
+                </p>
+                <p>
+                     Para superar esses desafios, a comissão organizadora demonstrou persistência, capacidade de gestão e soluções inovadoras
+                </p>
+                <h4> Liderança inspiradora</h4>
+                <p> 
+                    Mário de Andrade utilizou suas habilidades de comunicação e convencimento para conquistar o apoio de figuras influentes da sociedade, como Monteiro Lobato e Menotti Del Picchia. Sua liderança inspirou a equipe e os artistas participantes, impulsionando a organização do  evento. 
+
+                </p>
+                <h4> Mobilização da comunidade artística </h4>
+                <p> 
+                    Anita Malfatti, com sua personalidade vibrante e talento artístico, mobilizou a comunidade artística, reunindo artistas de diferentes áreas e estilos para participarem da Semana.
+                </p>
+                <h4> Gestão eficiente </h4>
+                <p> 
+                    Graça Aranha, como presidente da comissão organizadora, coordenou os esforços de forma eficiente, garantindo a  infraestrutura e logística necessárias para o evento.
+                </p>
+                <h4> Soluções inovadoras </h4>
+                <p>  
+                    Di Cavalcanti, com sua criatividade e ousadia, idealizou a programação da Semana, incluindo apresentações de diferentes formas de arte, como pintura, música, literatura e teatro.
+                </p>
+                <p> Essas estratégias foram essenciais para superar os obstáculos e garantir o sucesso da Semana de Arte Moderna, tais como  </p>
+                <p>Falta de recursos: Através da organização de eventos beneficentes e do apoio de mecenas, a comissão conseguiu reunir os recursos necessários para financiar o evento.
+            
+                <p> Preconceito e resistência: A Semana de Arte Moderna enfrentou críticas e resistência por parte da sociedade conservadora da época. No entanto, a persistência dos organizadores e a qualidade das obras apresentadas garantiram o reconhecimento e a valorização do evento. </p>
+                <p> Falta de espaço: A Semana de Arte Moderna foi realizada no Teatro Municipal de São Paulo, um espaço tradicional que não estava habituado a receber apresentações inovadoras. A equipe organizadora adaptou o espaço e a programação para atender às necessidades do evento.  </p>
+                <p>Para além dos embates e desafios, a Semana de Arte Moderna também foi palco de  momentos divertidos, inusitados e até mesmo constrangedores, revelando o lado mais humano e informal do evento. Algumas anedotas e curiosidades que marcaram a Semana: </p>
+                <h4>A "Vaia" a Graça Aranha </h4>
+                <p> Durante a palestra de abertura do evento, o escritor Graça Aranha foi vaiado por parte do público, que considerou seu discurso longo e tedioso. A cena, apesar de constrangedora, demonstra a efervescência e a impaciência do público com as ideias tradicionais.  </p>
+                <h4>O "Vestido de Noiva" de Mário de Andrade </h4>
+                <p> Em um gesto provocativo e irreverente, o escritor Mário de Andrade causou escândalo ao usar um vestido de  noiva em uma das apresentações da Semana. A atitude desafiava as normas de gênero da época e representava a ruptura com os valores tradicionais.  </p>
+                
+                <img src="images/db/Abaporu.jpg" width="350" class="center">
+                <div>
+                    <h4>O "Urubu" de Tarsila do Amaral </h4>
+                    <p>
+                        A obra "Abaporu" de Tarsila do Amaral, considerada um marco do modernismo brasileiro, foi recebida com vaias e críticas por parte do público, que a considerou grotesca e ofensiva à cultura brasileira. A incompreensão inicial demonstra o impacto e a ousadia da obra, que rompia com os  padrões estéticos tradicionais.
+                    </p>
+                </div>
+
+                <h4>A "Festa Modernista" </h4>
+                <p>  A Semana de Arte Moderna se encerrou com uma grande festa no Theatro Municipal de São Paulo, onde artistas e intelectuais se reuniram para celebrar o evento e discutir o futuro da arte brasileira. A festa foi marcada pela  alegria, pela confraternização e pela esperança de um novo tempo cultural.   </p>
+            </section>
+            <a href="#" id="a-importancia"><br><br></a>
+            <section id="importancia">
+                <h2 id="seis">Importância e Legado</h2>
+                <p>
+                    A semana de arte moderna de 1922 serviu de inspiração para a chegada do modernismo no Brasil. Dessa forma, a primeira fase do modernismo(1922-1930) apresenta obras com o mesmo espírito de irreverência e contestação da Semana de 22. Por meio disto, o evento é um divisor de águas entre a arte tradicional e a arte moderna.
+                </p>
+                <p>
+                    A Semana de Arte Moderna de 22 foi um marco histórico para o cenário artístico do país e para as gerações futuras. Foi ali que se iniciou a construção do movimento Modernista brasileiro encabeçado pelo Grupo dos Cinco, composto por Anita Malfatti, Tarsila do Amaral, Menotti del Picchia, Mário e Oswald de Andrade.
+                </p>
+                <p>
+                    Mesmo sendo alvo de muitas críticas, a Semana de Arte Moderna só ganhou sua importância com o passar dos anos, e o seu principal legado foi desprender a arte brasileira da reprodução de padrões europeus, dando início à construção de uma cultura essencialmente nacional, a arte brasileira passou por um processo de renovação e abertura a novos estilos e tendências, além de ter um forte impulso na busca de uma identidade própria.
+                </p>
+                <h3>Quebra com o academicismo</h3>
+                <p> A Semana marcou uma ruptura radical com as formas tradicionais de expressão artística, incentivando a busca por novas formas de criação</p>
+                <h3>Valorização da identidade nacional</h3>
+                <p> Os modernistas buscaram valorizar elementos da cultura brasileira, promovendo uma maior conscientização e valorização da diversidade cultural do país. </p>
+                <h3>Diversificação estética </h3>
+                <p>Estimulou a diversidade estética e expressiva na produção cultural brasileira, promovendo a experimentação e a inovação em diversas áreas artísticas.  </p>
+                <h3>Renovação da linguagem artística </h3>
+                <p> Introduziu novas formas de expressão e técnicas, enriquecendo o vocabulário artístico brasileiro e influenciando gerações subsequentes de artistas.  </p>
+                <h3>Impacto cultural duradouro</h3>
+                <p>Seu impacto continua relevante até os dias de hoje, com os princípios e ideias introduzidos pelos modernistas, continuando a inspirar e influenciar a produção cultural brasileira. </p>
+                <p>Em resumo, a Semana de Arte Moderna deixou um legado significativo, incentivando a expressão artística autêntica e diversificada no Brasil e contribuindo para a transformação do panorama cultural do país. </p>
+            </section>
+        </article>
     </main>
+    <footer>
+        <p>Atribuições:</p>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Pixel perfect - Flaticon</a>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

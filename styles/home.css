@@ -1,0 +1,161 @@
+main section#Home {
+    background-image: url('../images/home-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;  
+}
+
+main section#Home div#quadro {
+    background-color: white;
+    width: fit-content;
+    font-weight: 800;
+    font-size: 3em;
+
+    padding: .7em;
+    color: #2F2E2E;
+
+    text-align: center;
+}
+
+main section#Home div#quadro img {
+    height: 50px;
+}
+/* 
+main section#Home div#quadro h1 {
+    text-align: left;
+} */
+
+main section:not(#Home) {
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+main section:not(#Home) p {
+    text-align: justify;
+}
+
+main section:not(#Home) a.nav-link {
+    line-height: 4em;
+}
+
+/* main section#contexto-nacional {
+    display: flex;
+    background-color: red;
+} */
+
+div.two-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+div.two-columns p,
+div.two-columns h4 {
+    padding: 0 30px;
+}
+
+main article {
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 10px #00000010;
+    max-width: 1200px;
+}
+
+div#artists-galery {
+    margin: 0 -20px;
+    padding: 30px;
+    display: grid;
+    text-align: center;
+    grid-template-columns:auto auto;
+    gap: 15px;
+    /* background-image: url('../images/galeria-bg.jpg'); */
+    background-image: url('../images/cea378e0-c97e-4fa9-a788-88f7b227ba49.jpeg');
+    /* background-image: url('../images/957c7daa-af73-4baf-bdce-a6a3bf3968fd.jpeg'); */
+    background-color: #00000076;
+    background-position: center center;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    background-blend-mode: overlay;
+}
+
+div#artists-galery div.quadro-artista {
+    /* display: flex; */
+    background-color: #000000b8;
+    /* border: 1px solid rgb(185, 111, 20); */
+    padding: 15px;
+}
+
+div#artists-galery div.quadro-artista img {
+    width: 80%;
+    /* max-height: 90%; */
+    height: fit-content;
+    margin-top: 10%;
+}
+
+div#artists-galery div.quadro-artista div.informacoes {
+    color: white;
+    padding: 15px;
+}
+
+/* main article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+main article section img.float{
+    margin: 15px;   
+}
+
+main article section img.float.right {
+    float: right;
+    margin-right: 0;
+}
+
+main article section img.center {
+    text-align: center;
+}
+
+main article section img.float.left {
+    float: left;
+    margin-left: 0;
+}
+
+main article section div.images > img{
+    max-width: 33%;
+}
+
+.poema {
+    display: inline;
+    text-align: center;
+    float: right;
+    padding: 15px;
+}
+
+.poema h3 {
+    margin: 5px auto;
+}
+
+aside, .img-container {
+    display: inline;
+    float: right;
+    max-width: 33%;
+    margin: 0 0 5px 15px;
+    background-color: #00000010;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: .8em;
+    padding: .5em;
+}
