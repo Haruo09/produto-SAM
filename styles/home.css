@@ -68,6 +68,8 @@ main article {
 }
 
 div#artists-galery {
+    max-width: 100%;
+    overflow: hidden;
     margin: 0 -20px;
     padding: 30px;
     display: grid;
@@ -158,4 +160,35 @@ aside, .img-container {
 figcaption {
     font-size: .8em;
     padding: .5em;
+}
+
+
+@media (max-width: 600px) {
+    main section#Home div#quadro {
+        font-size: 2em;
+        max-width: 80%;
+    }
+
+    main article section img.float.right,
+    main article section img.float.left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: none;
+    }
+
+    .poema {
+        display: block;
+        float: none;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        font-size: .85em;
+    }
+
+    aside, .img-container {
+        display: block;
+        float: none;
+        max-width: 100%;
+    }
 }
