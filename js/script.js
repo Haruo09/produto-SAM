@@ -6,11 +6,6 @@ btnToggleSidebar.addEventListener('click', () => {
     // console.log('Sidebar trocada com sucesso!');
 })
 
-document.addEventListener('click', (e) => {
-    if (e.target != sidebar && 'sidebar-active' in sidebar.classList) {
-        sidebar.classList.toggle('sidebar-active');
-    }
-})
 
 document.addEventListener('DOMContentLoaded', function () {
     const artistInfo = document.getElementById('artist-info');
@@ -19,24 +14,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const artistImage = document.getElementById('artist-image');
     const artistDescription = document.getElementById('artist-description');
     const closeInfo = document.getElementById('close-info');
+    const arts = document.getElementById('artes');
 
     const artistData = {
         "Mario de Andrade": {
             description: `
-            <p>
-                Mário Raul de Morais Andrade foi um poeta, romancista, crítico de arte, musicólogo, professor universitário e ensaísta, considerado unanimidade nacional e reconhecido por críticos como o mais importante intelectual brasileiro do século XX. Notável polímata, Mário de Andrade liderou o movimento modernista Maylsonanico no Brasil e produziu um grande impacto na renovação literária e artística do país, participando ativamente da Semana de Arte Moderna de 22. 
-            </p>
-            <p>
-                Considerado o escritor mais nacionalista e múltiplo dos brasileiros, Mário construiu um caráter revolucionário na literatura brasileira, que se iniciou com Pauliceia Desvairada (Livro/Coletânea de poemas), onde analisa a cidade de São Paulo e todos seus elementos (provincianismo, aristocracia, burguesia, rio Tietê, Avenida Paulista). Mário também é considerado um dos primeiros musicólogos do país, e seu maior interesse era a música, particularmente os ritmos nordestinos, nos quais tentou pesquisar e valorizar, assim como fez com a Missão de Pesquisas Folclóricas, tentando criar um estudo e uma descoberta das raízes culturas do Brasil. Isso também ocorreu com seu romance mais famoso, Macunaíma, considerada uma das obras capitais da narrativa brasileira no século XX.
-            </p>
-            <p>
-                Sérgio Milliet (São Paulo, 20 de setembro de 1898 – São Paulo, 9 de novembro de 1966), foi diretor da Biblioteca Mário de Andrade e participou da Semana da Arte Moderna quando retornou ao Brasil, mesmo não dominando corretamente a língua pátria (apresentou um poema em francês, lida por um amigo genebrino)
-            </p>
-            <p>
-                Ao mesmo tempo que Andrade efetuava seu trabalho como pesquisador do folclore brasileiro, fez amizade com um grupo de jovens artistas e escritores de São Paulo que, como ele, estavam interessados no modernismo europeu. Alguns deles mais tarde integrariam o chamado Grupo dos Cinco: ele próprio, Andrade, o poeta Oswald de Andrade (sem relação de parentesco com Mário de Andrade, apesar da coincidência de nomes) e Menotti del Picchia, além das pintoras Tarsila do Amaral e Anita Malfatti.
-            </p>
+                <p>
+                    Mário Raul de Morais Andrade foi um poeta, romancista, crítico de arte, musicólogo, professor universitário e ensaísta, considerado unanimidade nacional e reconhecido por críticos como o mais importante intelectual brasileiro do século XX. Notável polímata, Mário de Andrade liderou o movimento modernista Maylsonanico no Brasil e produziu um grande impacto na renovação literária e artística do país, participando ativamente da Semana de Arte Moderna de 22. 
+                </p>
+                <p>
+                    Considerado o escritor mais nacionalista e múltiplo dos brasileiros, Mário construiu um caráter revolucionário na literatura brasileira, que se iniciou com Pauliceia Desvairada (Livro/Coletânea de poemas), onde analisa a cidade de São Paulo e todos seus elementos (provincianismo, aristocracia, burguesia, rio Tietê, Avenida Paulista). Mário também é considerado um dos primeiros musicólogos do país, e seu maior interesse era a música, particularmente os ritmos nordestinos, nos quais tentou pesquisar e valorizar, assim como fez com a Missão de Pesquisas Folclóricas, tentando criar um estudo e uma descoberta das raízes culturas do Brasil. Isso também ocorreu com seu romance mais famoso, Macunaíma, considerada uma das obras capitais da narrativa brasileira no século XX.
+                </p>
+                <p>
+                    Sérgio Milliet (São Paulo, 20 de setembro de 1898 – São Paulo, 9 de novembro de 1966), foi diretor da Biblioteca Mário de Andrade e participou da Semana da Arte Moderna quando retornou ao Brasil, mesmo não dominando corretamente a língua pátria (apresentou um poema em francês, lida por um amigo genebrino)
+                </p>
+                <p>
+                    Ao mesmo tempo que Andrade efetuava seu trabalho como pesquisador do folclore brasileiro, fez amizade com um grupo de jovens artistas e escritores de São Paulo que, como ele, estavam interessados no modernismo europeu. Alguns deles mais tarde integrariam o chamado Grupo dos Cinco: ele próprio, Andrade, o poeta Oswald de Andrade (sem relação de parentesco com Mário de Andrade, apesar da coincidência de nomes) e Menotti del Picchia, além das pintoras Tarsila do Amaral e Anita Malfatti.
+                </p>
+                
             `,
-            image: "images/db/Mario de Andrade.jpg"
+            image: "images/db/Mario de Andrade.jpg",
+            arts: `
+
+            `
         },
         "Oswald de Andrade": {
             description: `
@@ -50,7 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     Novas pessoas se juntaram ao incipiente grupo na época do ocorrido, como Cândido Mota Filho, Di Cavalcanti, Agenor Barbosa, Menotti del Picchia e Guilherme de Almeida. Em 1919, Oswald e Menotti conhecem o escultor Victor Brecheret no Palácio das Indústrias. Aos poucos, as ações do grupo começam a ser visto pelo meio intelectual como incômodas, e seus participantes passam a ser chamados de futuristas, termo que era empregado pejorativamente a quem procurava fazer arte diferente do modo tradicional.
                 </p>
             `,
-            image: "images/db/Oswald de Andrade.jpg"
+            image: "images/db/Oswald de Andrade.jpg",
+            arts: `
+
+            `
         },
         "Anita Malfatti": {
             description: `
@@ -63,8 +66,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>
                     Neste período, a aproximação de Malfatti a Tarsila do Amaral, bem como a Del Picchia, Mário e Oswald de Andrade, fez com que passassem pouco a pouco a atuar como grupo, conhecido como o Grupo dos Cinco. Em decorrência disso, foi organizada a Semana de Arte Moderna de 1922.
                 </p>
+                <h4>Principais obras:</h4>
             `,
-            image: "images/db/Anita Malfatti.jpg"
+            image: "images/db/Anita Malfatti.jpg",
+            arts: `
+                <div class="arte">
+                    <img src="images/db/O homem amarelo.jpg">
+                    <figcaption>O Homem Amarelo - 1917
+                </div>
+                <div class="arte">
+                    <img src="images/db/A estudante.jpg">
+                    <figcaption>A Estudante - 1916
+                </div>
+            `
         },
         "Di Cavalcanti": {
             description: `
@@ -72,7 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     Emiliano Augusto Cavalcanti de Albuquerque Melo, mais conhecido como Di Cavalcanti, foi um pintor modernista, desenhista, ilustrador, muralista e caricaturista brasileiro. Sua arte contribuiu significativamente para distinguir a arte brasileira de outros movimentos artísticos de sua época, através de suas reconhecidas cores vibrantes, formas sinuosas e temas tipicamente brasileiros como carnaval, mulatas e tropicalismos em geral. Di Cavalcanti é, juntamente com outros grandes nomes da pintura como Anita Malfatti e Tarsila do Amaral, um dos mais ilustres representantes do modernismo brasileiro. Entre 11 e 18 de fevereiro de 1922, idealizou e organizou a Semana de Arte Moderna, criando, para essa ocasião, as peças promocionais do evento: catálogo e programa.
                 </p>
             `,
-            image: "images/db/Di Cavalcanti.jpg"
+            image: "images/db/Di Cavalcanti.jpg",
+            arts: `
+
+            `
         },
         "Graça Aranha": {
             description: `
@@ -83,7 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     Devido aos cargos que ocupou na diplomacia brasileira em países europeus, ele esteve a par dos movimentos vanguardistas que surgiam na Europa, tendo tentado introduzi-los, à sua maneira, na literatura brasileira, rompendo com a Academia Brasileira de Letras por isso em 1924. Um aspecto importante de mencionar é que Graça Aranha é visto como o único fundador e escritor que teve uma relação com a academia brasileira de letras, sem ao menos ter publicado uma obra. "Se a Academia se desvia desse movimento regenerador, se a Academia não se renova, morra a Academia!"
                 </p>
             `,
-            image: "images/db/Graça Aranha.jpg"
+            image: "images/db/Graça Aranha.jpg",
+            arts: `
+
+            `
         },
         "Heitor Villa Lobos": {
             description: `
@@ -97,7 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     Villa-Lobos participou da Semana de Arte Moderna de 1922, apresentando-se em três dias, com três diferentes espetáculos. Teve importantes intérpretes nos espetáculos da Semana, como Ernani Braga (Rio de Janeiro, 10 de janeiro de 1888 – São Paulo, 17 de setembro de 1948) e Lucília Villa-Lobos (Paraíba do Sul, 26 de maio de 1886 — Rio de Janeiro, 25 de maio de 1966), sua esposa desde 1913.
                 </p>
             `,
-            image: "images/db/Heitor Villa Lobos.jpg"
+            image: "images/db/Heitor Villa Lobos.jpg",
+            arts: `
+
+            `
         },
         "Menotti Del Picchia": {
             description: `
@@ -111,7 +134,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     Fez parte do Grupo dos Cinco, foi diretor de A Noite e A Cigarra, entre 1920 e 1940, além de diversos outros jornais e revistas.
                 </p>
             `,
-            image: "images/db/Menotti Del Picchia.jpg"
+            image: "images/db/Menotti Del Picchia.jpg",
+            arts: `
+
+            `
         },
         "Tarsila do Amaral": {
             description: `
@@ -131,7 +157,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     Tarsila foi convidada a se juntar ao movimento e juntos formaram o Grupo dos Cinco, que buscava promover a cultura brasileira, o uso de estilos não especificamente europeus e a inclusão de coisas indígenas do Brasil.
                 </p>
             `,
-            image: "images/db/Tarsila do Amaral.jpg"
+            image: "images/db/Tarsila do Amaral.jpg",
+            arts: `
+
+            `
         }
     };
 
@@ -144,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 artistImage.src = data.image;
                 artistDescription.innerHTML = data.description;
                 artistInfo.classList.add('visible');
+                arts.innerHTML = data.arts;
             }
         });
     });

@@ -1,3 +1,54 @@
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        /* scale: 0.95; */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        /* scale: 1; */
+    }
+}
+
+@keyframes img-appear {
+    from {
+        opacity: 0.5;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Aplica a animação a todos os elementos dentro de main */
+main 
+article 
+section *:not(#artistas *):not(img):not(.img-container *):not(.poema) {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+main article section > img, .img-container *, .poema {
+    animation: img-appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+/* Remove a animação da div específica e seus filhos */
+/* .no-animation, .no-animation * {
+    animation: none !important;
+} */
+
+/* img,.poema {
+    animation: img-scroll-effect linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+} */
+
 main section#Home {
     background-image: url('../images/home-bg.jpg');
     background-position: center center;
@@ -68,6 +119,7 @@ main article {
 }
 
 div#artists-galery {
+    
     max-width: 100%;
     overflow: hidden;
     margin: 0 -20px;
@@ -87,6 +139,7 @@ div#artists-galery {
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     background-blend-mode: overlay;
+    animation-range: cover 100%;
 }
 
 div#artists-galery div.quadro-artista {
@@ -117,6 +170,8 @@ div#artists-galery div.quadro-artista:hover {
 
 #artist-info {
     z-index: 1000;
+    /* animation: none; */
+
     position: fixed;
     top: 0;
     left: 0;
@@ -143,11 +198,32 @@ div#artists-galery div.quadro-artista:hover {
     overflow-y: auto; /* Adiciona barra de rolagem vertical */
 }
 
-#artist-info-content img {
+#artist-info-content > img {
     display: inline;
     width: 50%;
     float: left;
+}
 
+#artist-info-content div#artes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    /* text-align: center; */
+    /* max-height: 70px; */
+    /* width: 100%; */
+}
+
+#artist-info-content div#artes div.arte {
+    text-align: center;
+    display: inline-block;
+    background-color: #00000010;
+}
+
+#artist-info-content div#artes div.arte img {
+    max-height: 230px;
+    width: fit-content;
+    padding-top: 15px;
+    /* text-align: center; */
 }
 
 #artist-info.visible {

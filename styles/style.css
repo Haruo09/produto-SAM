@@ -45,7 +45,7 @@ header button#toggle_sidebar {
     transition-duration: 300ms;
     position: absolute;
     z-index: 5;
-    top: 15px;
+    top: 21.7px;
 }
 
 header button#toggle_sidebar:hover,
@@ -132,6 +132,8 @@ header nav a:hover {
     right: 15px;
 
     box-shadow: 2px 2px 5px #0000007b;
+    z-index: 300;
+    animation: none;
 }
 
 #btnGoToTheTop img{
