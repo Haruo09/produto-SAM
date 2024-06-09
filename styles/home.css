@@ -226,6 +226,10 @@ div#artists-galery div.quadro-artista:hover {
     /* text-align: center; */
 }
 
+#artist-info-content div#artes .artlist {
+    text-align: left;
+}
+
 #artist-info.visible {
     visibility: visible;
     opacity: 1;

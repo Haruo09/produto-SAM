@@ -6,7 +6,6 @@ btnToggleSidebar.addEventListener('click', () => {
     // console.log('Sidebar trocada com sucesso!');
 })
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const artistInfo = document.getElementById('artist-info');
     const artistInfoContent = document.getElementById('artist-info-content');
@@ -52,8 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Oswald de Andrade.jpg",
             arts: `
-
+                <ul class="artlist">
+                    <li><em>Manifesto da Poesia Pau-Brasil</em> (1924)</li>
+                    <li><em>Manifesto Antropófago</em> (1928)</li>
+                </ul>
             `
+            
         },
         "Anita Malfatti": {
             description: `
@@ -66,17 +69,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>
                     Neste período, a aproximação de Malfatti a Tarsila do Amaral, bem como a Del Picchia, Mário e Oswald de Andrade, fez com que passassem pouco a pouco a atuar como grupo, conhecido como o Grupo dos Cinco. Em decorrência disso, foi organizada a Semana de Arte Moderna de 1922.
                 </p>
-                <h4>Principais obras:</h4>
             `,
             image: "images/db/Anita Malfatti.jpg",
             arts: `
                 <div class="arte">
                     <img src="images/db/O homem amarelo.jpg">
-                    <figcaption>O Homem Amarelo - 1917
+                    <figcaption>O Homem Amarelo - 1917</figcaption>
                 </div>
                 <div class="arte">
                     <img src="images/db/A estudante.jpg">
-                    <figcaption>A Estudante - 1916
+                    <figcaption>A Estudante - 1916</figcaption>
                 </div>
             `
         },
@@ -88,7 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Di Cavalcanti.jpg",
             arts: `
-
+                <div class="arte" style="grid-template-columns: auto;">
+                    <img src="../images/db/Pierrete.png" alt="">
+                    <figcaption>Pierrete</figcaption>
+                </div>
             `
         },
         "Graça Aranha": {
@@ -102,7 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Graça Aranha.jpg",
             arts: `
-
+                <ul class="artlist">
+                    <li>Canaã (Livro/Romance) - Ilustrado por Oswaldo Goeldi (desenhista, ilustrador, gravador, xilógrafo e professor brasileiro)</li>
+                </ul>
             `
         },
         "Heitor Villa Lobos": {
@@ -119,7 +126,11 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Heitor Villa Lobos.jpg",
             arts: `
-
+                <ul class="artlist">
+                    <li><em>O Ginete do Pierrozinho</em></li>
+                    <li><em>Valsa mística (simples coletânea)</em></li>
+                    <li><em>Cascavel</em></li>
+                </ul>
             `
         },
         "Menotti Del Picchia": {
@@ -136,7 +147,13 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Menotti Del Picchia.jpg",
             arts: `
-
+                <p>Publicou, além de poemas e crônicas, vários romances, entre eles:</p>
+                <ul class="artlist">
+                    <li><em>Lama e Argila</em></li>
+                    <li><em></em>O Homem e a Morte</li>
+                    <li><em></em>República 3000</li>
+                    <li><em></em>Salomé</li>
+                </ul>
             `
         },
         "Tarsila do Amaral": {
@@ -159,7 +176,10 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Tarsila do Amaral.jpg",
             arts: `
-
+                <div class="arte">
+                    <img src="../images/db/Abaporu.jpg" alt="">
+                    <figcaption>Abaporu - </figcaption>
+                </div>
             `
         }
     };
@@ -174,6 +194,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 artistDescription.innerHTML = data.description;
                 artistInfo.classList.add('visible');
                 arts.innerHTML = data.arts;
+            }
+
+            if (data["arts"].count("div") == 2) {
+                arts.style.display = "inline-block";
+            }
+
+            else {
+                arts.style.display = "grid";
             }
         });
     });
