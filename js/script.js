@@ -8,7 +8,7 @@ btnToggleSidebar.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const artistInfo = document.getElementById('artist-info');
-    const artistInfoContent = document.getElementById('artist-info-content');
+    // const artistInfoContent = document.getElementById('artist-info-content');
     const artistName = document.getElementById('artist-name');
     const artistImage = document.getElementById('artist-image');
     const artistDescription = document.getElementById('artist-description');
@@ -51,10 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Oswald de Andrade.jpg",
             arts: `
-                <ul class="artlist">
-                    <li><em>Manifesto da Poesia Pau-Brasil</em> (1924)</li>
-                    <li><em>Manifesto Antropófago</em> (1928)</li>
-                </ul>
+                <div class="artes">
+                    <ul class="artlist">
+                        <li><em>Manifesto da Poesia Pau-Brasil</em> (1924)</li>
+                        <li><em>Manifesto Antropófago</em> (1928)</li>
+                    </ul>
+                </div>
             `
             
         },
@@ -193,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 artistImage.src = data.image;
                 artistDescription.innerHTML = data.description;
                 artistInfo.classList.add('visible');
-                arts.innerHTML = data.arts;
+                
             }
 
             if (data["arts"].count("div") == 2) {
