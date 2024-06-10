@@ -8,7 +8,7 @@ btnToggleSidebar.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const artistInfo = document.getElementById('artist-info');
-    // const artistInfoContent = document.getElementById('artist-info-content');
+    const artistInfoContent = document.getElementById('artist-info-content');
     const artistName = document.getElementById('artist-name');
     const artistImage = document.getElementById('artist-image');
     const artistDescription = document.getElementById('artist-description');
@@ -51,14 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Oswald de Andrade.jpg",
             arts: `
-                <div class="artes">
-                    <ul class="artlist">
-                        <li><em>Manifesto da Poesia Pau-Brasil</em> (1924)</li>
-                        <li><em>Manifesto Antropófago</em> (1928)</li>
-                    </ul>
-                </div>
+                <ul class="artlist">
+                    <li><em>Manifesto da Poesia Pau-Brasil</em> (1924)</li>
+                    <li><em>Manifesto Antropófago</em> (1928)</li>
+                </ul>
             `
-            
         },
         "Anita Malfatti": {
             description: `
@@ -82,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <img src="images/db/A estudante.jpg">
                     <figcaption>A Estudante - 1916</figcaption>
                 </div>
-            `
+            `,
         },
         "Di Cavalcanti": {
             description: `
@@ -180,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
             arts: `
                 <div class="arte">
                     <img src="../images/db/Abaporu.jpg" alt="">
-                    <figcaption>Abaporu - </figcaption>
+                    <figcaption>Abaporu - 1928</figcaption>
                 </div>
             `
         }
@@ -195,15 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 artistImage.src = data.image;
                 artistDescription.innerHTML = data.description;
                 artistInfo.classList.add('visible');
-                
-            }
-
-            if (data["arts"].count("div") == 2) {
-                arts.style.display = "inline-block";
-            }
-
-            else {
-                arts.style.display = "grid";
+                arts.innerHTML = data.arts;
             }
         });
     });

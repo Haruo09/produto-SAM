@@ -101,16 +101,18 @@ main section:not(#Home) a.nav-link {
     background-color: red;
 } */
 
-div.two-columns {
+/* div.two-columns {
     display: flex;
     justify-content: space-between;
     align-items: start;
-}
+} */
 
-div.two-columns p,
+
+
+/* div.two-columns p,
 div.two-columns h4 {
     padding: 0 30px;
-}
+} */
 
 main article {
     margin: 0 auto;
@@ -199,30 +201,29 @@ div#artists-galery div.quadro-artista:hover {
 }
 
 #artist-info-content > img {
-    display: inline;
+    /* display: inline; */
     width: 50%;
     float: left;
 }
 
-#artist-info-content div#artes {
+/* #artist-info-content div#artes {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
-    /* text-align: center; */
-    /* max-height: 70px; */
-    /* width: 100%; */
-}
+} */
+
 
 #artist-info-content div#artes div.arte {
+    margin-top: 15px;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     background-color: #00000010;
 }
 
 #artist-info-content div#artes div.arte img {
-    max-height: 230px;
-    width: fit-content;
-    padding-top: 15px;
+    /* max-height: 230px; */
+    width: 100%;
+    /* padding-top: 15px; */
     /* text-align: center; */
 }
 
