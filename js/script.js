@@ -34,8 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
             `,
             image: "images/db/Mario de Andrade.jpg",
             arts: `
-
+                <ul class="artlist">
+                    <li>São coletâneas de poemas, livros</li>
+                    <li><em>Há uma gota de sangue em cada poema- poesias</em> (1917) </li>
+                    <li><em>Pauliceia desvairada - poesias</em> (1922)</li>
+                </ul>
             `
+            
         },
         "Oswald de Andrade": {
             description: `

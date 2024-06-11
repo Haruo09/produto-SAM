@@ -23,7 +23,23 @@
     }
 }
 
+a.link-interno {
+    margin-bottom: 0;
+    position: relative;
+    bottom: 45px;
+}
+
+/* a#a-importancia {
+    position: relative;
+    bottom: 50px;
+} */
+
 /* Aplica a animação a todos os elementos dentro de main */
+
+main {
+    margin-bottom: 25vh;
+}
+
 main 
 article 
 section *:not(#artistas *):not(img):not(.img-container *):not(.poema) {
@@ -301,8 +317,22 @@ figcaption {
     padding: .5em;
 }
 
+footer {
+    background-color: #564592;
+    color: white;
+    padding-bottom: 10vh;
+}
+
+
 
 @media (max-width: 600px) {
+    nav #quem-somos-anchor {
+        text-align: right;
+    }
+
+    nav {
+        margin-right: 0 !important;
+    }
     main section#Home div#quadro {
         font-size: 2em;
         max-width: 80%;
@@ -329,6 +359,7 @@ figcaption {
         display: block;
         float: none;
         max-width: 100%;
+        margin-left: 0;
     }
 
     div#artists-galery {
@@ -337,5 +368,19 @@ figcaption {
 
     div#artists-galery div.quadro-artista {
         margin: 15px auto;
+    }
+}
+
+@media (max-width: 281px) {
+    #Home #quadro h1 {
+        font-size: 1.3em;
+    }
+
+    #btnGoToTheTop {
+        position: fixed;
+        right: 20px !important;
+    }
+    footer {
+        font-size: .6em;
     }
 }
